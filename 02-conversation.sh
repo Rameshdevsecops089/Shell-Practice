@@ -1,5 +1,8 @@
 #!/bin/bash
 
+person1=trump
+person2=musk
+
 echo "trump :: hey musk, How are you?"
 echo "musk :: Hello trump, i am fine. how are you do"
 echo "trump: i am fine too. whats up?"
