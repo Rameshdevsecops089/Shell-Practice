@@ -1,4 +1,4 @@
-movies = ("court" "Hit" "Pushpa1" "killer")
+movies=("court" "Hit" "Pushpa1" "killer")
 
 echo "first movie:: ${movie[0]}"
 echo "third movie:: ${movie[2]}"
