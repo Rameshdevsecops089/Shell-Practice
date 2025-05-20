@@ -7,16 +7,16 @@ then
     echo "Error:: please run this script with root user"
     exit 1 #give other than 0 upto 127
 else
-    echo "you are running with root user"
+    echo "you are running with root access"
 fi
 
 # validate function takes input as exit status, what command they tried to install
 VALIDATE(){
     if [ $? -eq 0 ]
     then 
-        echo "install $2 is ... success"
+        echo "installing $2 is ... success"
     else
-        echo "install $2 is ... Failure"
+        echo "installing $2 is ... Failure"
         exit 1
     fi
 }
