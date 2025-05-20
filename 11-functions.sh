@@ -29,7 +29,7 @@ then
     VALIDATE $1 "mysql"
 else
     echo "mysql is already installed ... nothing to do"
-if
+fi
 
 dnf list install python3
 if [ $? -ne 0 ]
@@ -39,7 +39,7 @@ then
     VALIDATE $? "python3"
 else
     echo "python3 is already installed ... nothing to do"
-if
+fi
 
 dnf list install nginx
 if [ $? -ne 0 ]
