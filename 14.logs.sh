@@ -35,20 +35,20 @@ dnf list install mysql &>>$LOG_FILE
 if [ $? -ne 0 ]
 then
     echo "mysql is not installed... going to install it" | tee -a $LOG_FILE
-    dnf install mysql -Y &>>$LOG_FILE
+    dnf install mysql -y &>>$LOG_FILE
     VALIDATE $1 "mysql"
 else
-    echo -e "nothing to do mysql...$Y already installed it $N" | tee -a $LOG_FILE
+    echo -e "nothing to do mysql...$Y already installed $N" | tee -a $LOG_FILE
 fi
 
 dnf list install python3 &>>$LOG_FILE
 if [ $? -ne 0 ]
 then
     echo "python3 is not installed... going to install" | tee -a $LOG_FILE
-    dnf install python3 -Y &>>$LOG_FILE
+    dnf install python3 -y &>>$LOG_FILE
     VALIDATE $? "python3"
 else
-    echo "Nothing to do python3... $Y already installed $N" | tee -a $LOG_FILE
+    echo -e "nothing to do python3... $Y already installed $N" | tee -a $LOG_FILE
 fi
 
 dnf list install nginx &>>$LOG_FILE
