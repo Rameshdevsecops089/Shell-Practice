@@ -38,7 +38,7 @@ fi
 dnf list install python3
 if [ $? -ne 0 ]
 then
-    echo "python3 is not installed.. going to install"
+    echo "python3 is not installed.. going to install it"
     dnf install python3 -y
     VALIDATE $? "python3"
 else
